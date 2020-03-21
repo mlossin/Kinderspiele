@@ -1,0 +1,16 @@
+﻿<Application x:Class="KinderspieleWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:KinderspieleWPF"
+             xmlns:vm="clr-namespace:KinderspieleWPF.ViewModels"
+             xmlns:views="clr-namespace:KinderspieleWPF.Views"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type vm:MemoryViewModel}">
+            <views:Memory />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:MemoyItemViewModel}">
+            <views:MemoryItemView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
